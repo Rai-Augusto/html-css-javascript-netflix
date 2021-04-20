@@ -1,0 +1,115 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+@font-face {
+    font-family: Netflix;
+    src: url('../_fonts/klavika-bold-webfont.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header .container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Elementos base*/
+
+body{
+    background: var(--preto);
+    font-family:'Arial','Times New Roman', Times, serif ;
+    color: white;
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family: 'Netflix','Arial Black', Times;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #aaa;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme principal*/
+.principalatrac{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../_img/jiqD14fg7UTZOT6qgvzTmfRYpWI.jpg');
+    height: 550px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principalatrac .sinopse{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.principalatrac .titulo{
+    margin-left: 10px;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:'Netflix' , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+
+}
+
+.botao{
+    background-color:rgba(0, 0, 0,.50);
+    border: none;
+    color: white;
+    border-radius: 25px;
+
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.5s ease all;
+    margin-left: 10px;
+}
+
+.botao:hover{
+    color: #141414;
+    background-color:#fff ;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.principalatrac .container{
+    width: 50%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel{
+    margin-top: 5px;
+}
